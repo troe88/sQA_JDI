@@ -278,3 +278,4 @@ libraries/
 *./environment.properties
 */target
 target/
+.logs/

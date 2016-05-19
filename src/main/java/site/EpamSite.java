@@ -13,10 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import site.pages.CareerPage;
-import site.pages.HomePage;
-import site.pages.JobDescriptionPage;
-import site.pages.JobListingPage;
+import site.pages.*;
 
 import static com.epam.jdi.uitests.web.selenium.elements.composite.CheckPageTypes.CONTAIN;
 import static com.epam.jdi.uitests.web.selenium.elements.composite.CheckPageTypes.MATCH;
@@ -35,6 +32,8 @@ public class EpamSite extends WebSite {
     public static JobListingPage jobListingPage;
     @JPage(url = ".*/careers/job-listings/job\\.\\d*#apply", urlCheckType = MATCH)
     public static JobDescriptionPage jobDescriptionPage;
+    @JPage(url= "/request-information", title = "Request Information")
+    public static RequestInfoPage requestInfoPage;
 
     @FindBy(css = ".tile-menu>li>a")
     public static Menu<HeaderMenu> headerMenu;
