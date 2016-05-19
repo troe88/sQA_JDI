@@ -276,3 +276,5 @@ auto-tests/.logs/
 auto-tests/.idea/workspace.xml
 libraries/
 *./environment.properties
+*/target
+target/
